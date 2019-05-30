@@ -11,11 +11,11 @@ jobs:
     steps:
       - checkout
       - run: yarn install
-      - run: yarn pack --filename package.tgz
-      - store_artifacts:
-          path: package.tgz
-          destination: dist
-      - run: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/project/.npmrc
+      # - run: yarn pack --filename package.tgz
+      # - store_artifacts:
+      #     path: package.tgz
+      #     destination: dist
+      # - run: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/project/.npmrc
       # TODO: change this to "--access restricted" when adapting for private
       # npm package use
       # - run: npm publish package.tgz --access public
