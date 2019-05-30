@@ -1,6 +1,6 @@
 {
   "name": "npm-deploy-tests",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Get deployment to npm working",
   "main": "index.js",
   "repository": "git@github.com:eric-hu/npm-deploy-tests.git",
