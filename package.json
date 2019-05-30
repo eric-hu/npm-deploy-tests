@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "git@github.com:eric-hu/npm-deploy-tests.git",
   "author": "Eric Hu <676307+eric-hu@users.noreply.github.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "auto": "^7.0.4"
+  }
 }
