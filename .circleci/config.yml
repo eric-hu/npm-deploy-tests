@@ -16,7 +16,9 @@ jobs:
           path: package.tgz
           destination: dist
       - run: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/project/.npmrc
-      - run: npm publish package.tgz --access restricted
+      # TODO: change this to "--access restricted" when adapting for private
+      # npm package use
+      - run: npm publish package.tgz --access public
 
 workflows:
   version: 2
