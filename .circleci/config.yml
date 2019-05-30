@@ -11,14 +11,6 @@ jobs:
     steps:
       - checkout
       - run: yarn install
-      # - run: yarn pack --filename package.tgz
-      # - store_artifacts:
-      #     path: package.tgz
-      #     destination: dist
-      # - run: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/project/.npmrc
-      # TODO: change this to "--access restricted" when adapting for private
-      # npm package use
-      # - run: npm publish package.tgz --access public
       - run: yarn auto shipit
 
 workflows:
@@ -26,9 +18,9 @@ workflows:
 
   build-test-and-publish:
     jobs:
-      - deploy
+      - deploy:
       # - deploy:
       #     context: design-system
-          #filters:
-          #  branches:
-          #    only: master
+          filters:
+           branches:
+             only: master
