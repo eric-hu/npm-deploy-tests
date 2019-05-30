@@ -19,6 +19,7 @@ jobs:
       # TODO: change this to "--access restricted" when adapting for private
       # npm package use
       - run: npm publish package.tgz --access public
+      - run: yarn auto shipit
 
 workflows:
   version: 2
