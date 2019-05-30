@@ -1,0 +1,9 @@
+{
+  "name": "npm-deploy-tests",
+  "version": "0.0.1",
+  "description": "Get deployment to npm working",
+  "main": "index.js",
+  "repository": "git@github.com:eric-hu/npm-deploy-tests.git",
+  "author": "Eric Hu <676307+eric-hu@users.noreply.github.com>",
+  "license": "MIT"
+}
